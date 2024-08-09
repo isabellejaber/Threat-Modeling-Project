@@ -67,8 +67,8 @@
               "height": 150
             },
             "shape": "trust-boundary-box",
-            "id": "222973dd-b1fb-4a48-907f-9af31919f2f0",
             "zIndex": -1,
+            "id": "222973dd-b1fb-4a48-907f-9af31919f2f0",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -174,27 +174,27 @@
             "data": {
               "type": "tm.Process",
               "name": "User Interface",
-              "description": "",
+              "description": "Web or Mobile",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": [
                 {
                   "id": "2b752536-873d-4585-8abc-fa7153782de9",
                   "title": "New STRIDE threat",
                   "status": "Open",
-                  "severity": "Low",
+                  "severity": "High",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "If Sensitive Personally Identifiable Information (SPII) is disclosed through this process this could be detrimental to the customers and the reputation of SpendSmart.",
+                  "mitigation": "Create custom error messages that reveal minimal information about the tech infrastructure. \nLog errors securely to aid in troubleshooting without compromising security.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
-                  "score": ""
+                  "score": "8"
                 },
                 {
                   "id": "2689e38f-7786-4d01-b70b-6f7e66e8aa0d",
@@ -227,7 +227,7 @@
                 "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
@@ -320,7 +320,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
-                  "score": ""
+                  "score": "6"
                 }
               ],
               "threatFrequency": {
@@ -329,7 +329,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
