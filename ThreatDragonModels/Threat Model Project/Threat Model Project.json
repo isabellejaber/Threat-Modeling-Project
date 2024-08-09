@@ -202,12 +202,12 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Denial of service",
-                  "description": "Provide a description for this threat",
+                  "description": "An attacker may render the user interface unavailable. This may leave users without access to crucial financial information.",
                   "mitigation": "Cloudflare\nRedundant services\nWAF",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
-                  "score": ""
+                  "score": "8"
                 },
                 {
                   "id": "e63da8bf-25cd-4f28-9e86-d3c489749064",
@@ -215,20 +215,20 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Session timeouts.",
+                  "description": "Imitating a valid user could make Sensitive Personally Identifiable Information (SPII) available to unauthorized individuals.",
+                  "mitigation": "Session timeouts.\nPacket filtering.\nHTTPS or SSH connections.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
-                  "score": ""
+                  "score": "7"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 5,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 2,
-                "denialOfService": 2,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
             }
@@ -316,7 +316,7 @@
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Admin users may be susceptible to privilege elevation during the authentication process.",
-                  "mitigation": "Principle of Least Privilege\nPassword policies.",
+                  "mitigation": "Principle of Least Privilege.\nPassword policies.\nCarefully manage privileged accounts.\nReviewing and auditing.\nTemporary credentials.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -329,7 +329,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
             }
           },
