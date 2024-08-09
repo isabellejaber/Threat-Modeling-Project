@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 69.99999999999895,
-              "y": -139.99999999999915
+              "x": 70.25,
+              "y": -139.9999999999997
             },
             "size": {
               "width": 200,
@@ -39,8 +39,8 @@
           },
           {
             "position": {
-              "x": 779.9999999999991,
-              "y": -369.9999999999993
+              "x": 784.9999999999995,
+              "y": -380
             },
             "size": {
               "width": 200,
@@ -49,6 +49,26 @@
             "shape": "trust-boundary-box",
             "zIndex": -1,
             "id": "645011d7-0ede-4a5c-8c8a-2e501e7439b3",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 494,
+              "y": 130.00000000000176
+            },
+            "size": {
+              "width": 560,
+              "height": 150
+            },
+            "shape": "trust-boundary-box",
+            "id": "222973dd-b1fb-4a48-907f-9af31919f2f0",
+            "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -268,8 +288,8 @@
                 "text": "Authentication/\nAuthorization"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -283,12 +303,34 @@
               "description": "Token based, MFA\nRBAC for staff/admins",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a8c2e8c3-d52b-413a-ab16-84137897b9b7",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Admin users may be susceptible to privilege elevation during the authentication process.",
+                  "mitigation": "Principle of Least Privilege\nPassword policies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -851,8 +893,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "b6116667-acf2-4916-a35b-9d2edce85c2b",
             "zIndex": 12,
+            "id": "b6116667-acf2-4916-a35b-9d2edce85c2b",
             "data": {
               "type": "tm.Actor",
               "name": "API",
@@ -869,6 +911,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
