@@ -142,8 +142,8 @@
                 "text": "User Interface"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -157,12 +157,60 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2b752536-873d-4585-8abc-fa7153782de9",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "2689e38f-7786-4d01-b70b-6f7e66e8aa0d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Cloudflare\nRedundant services\nWAF",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "e63da8bf-25cd-4f28-9e86-d3c489749064",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Session timeouts.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -286,8 +334,8 @@
           },
           {
             "position": {
-              "x": 692.5,
-              "y": 60.00000000000003
+              "x": 560,
+              "y": 180
             },
             "size": {
               "width": 150,
@@ -305,8 +353,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "926769ed-fa5e-4358-8cd2-b59dfac19649",
             "zIndex": 7,
+            "id": "926769ed-fa5e-4358-8cd2-b59dfac19649",
             "data": {
               "type": "tm.Actor",
               "name": "Credit Card Company",
@@ -320,8 +368,8 @@
           },
           {
             "position": {
-              "x": 882,
-              "y": 60.00000000000003
+              "x": 850,
+              "y": 180
             },
             "size": {
               "width": 160,
@@ -339,8 +387,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "ba6679b0-53ed-44ae-9094-e31e3f7f3466",
             "zIndex": 8,
+            "id": "ba6679b0-53ed-44ae-9094-e31e3f7f3466",
             "data": {
               "type": "tm.Actor",
               "name": "Utilities companies",
@@ -601,84 +649,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "Token-based authentication.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "6d6e7466-ac53-490f-91f7-c07c60531579",
-            "source": {
-              "cell": "ba6679b0-53ed-44ae-9094-e31e3f7f3466"
-            },
-            "target": {
-              "cell": "43d9ef7f-37d1-4be5-a8c6-727d1750325b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "Token-based authentication.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "75322e99-3546-43d4-956c-2cce709ee961",
-            "source": {
-              "cell": "926769ed-fa5e-4358-8cd2-b59dfac19649"
-            },
-            "target": {
-              "cell": "43d9ef7f-37d1-4be5-a8c6-727d1750325b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -710,6 +680,123 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "dbf18a2d-2ef7-4894-b766-aed66ef387ea",
+            "source": {
+              "cell": "926769ed-fa5e-4358-8cd2-b59dfac19649"
+            },
+            "target": {
+              "cell": "b6116667-acf2-4916-a35b-9d2edce85c2b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "cdeb26f6-9c3d-430a-9cec-66dc2851782d",
+            "source": {
+              "cell": "ba6679b0-53ed-44ae-9094-e31e3f7f3466"
+            },
+            "target": {
+              "cell": "b6116667-acf2-4916-a35b-9d2edce85c2b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "Token-based authentication.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "8232f286-6df6-486e-b0a2-d2ff77d8b1f1",
+            "source": {
+              "cell": "b6116667-acf2-4916-a35b-9d2edce85c2b"
+            },
+            "target": {
+              "cell": "43d9ef7f-37d1-4be5-a8c6-727d1750325b"
+            }
+          },
+          {
             "position": {
               "x": 114,
               "y": 30
@@ -730,11 +817,45 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "0ae836ed-4226-4d18-b277-76c4b5e9a729",
             "zIndex": 11,
+            "id": "0ae836ed-4226-4d18-b277-76c4b5e9a729",
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 724,
+              "y": 3
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "b6116667-acf2-4916-a35b-9d2edce85c2b",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Actor",
+              "name": "API",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -748,6 +869,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 4
   }
 }
