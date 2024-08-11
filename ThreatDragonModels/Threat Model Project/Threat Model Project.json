@@ -200,18 +200,18 @@
                   "id": "e63da8bf-25cd-4f28-9e86-d3c489749064",
                   "title": "New STRIDE threat",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Imitating a valid admin user could make SPII available to unauthorized individuals. An attacker uses stolen API keys to access restricted endpoints.",
                   "mitigation": "Session timeouts.\nPacket filtering.\nHTTPS or SSH connections.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
-                  "score": "7"
+                  "score": "6"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 6,
+                "spoofing": 7,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 6,
@@ -761,8 +761,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e35228af-3a69-416b-9626-db29b1f4c2e5",
             "zIndex": 12,
+            "id": "e35228af-3a69-416b-9626-db29b1f4c2e5",
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -786,7 +786,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
-                  "score": "7"
+                  "score": "8"
                 },
                 {
                   "id": "1ecf2977-481a-4a96-921d-67e22cb582d5",
@@ -804,7 +804,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 3,
