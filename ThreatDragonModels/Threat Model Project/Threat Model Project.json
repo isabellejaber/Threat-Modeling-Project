@@ -190,7 +190,7 @@
                   "severity": "High",
                   "type": "Information disclosure",
                   "description": "If Sensitive Personally Identifiable Information (SPII) is disclosed through this process this could be detrimental to the customers and the reputation of SpendSmart.",
-                  "mitigation": "Create custom error messages that reveal minimal information about the tech infrastructure. \nLog errors securely to aid in troubleshooting without compromising security.\n",
+                  "mitigation": "Create custom error messages that reveal minimal information about the tech infrastructure. \nLog errors securely to aid in troubleshooting without compromising security.\nAPI security.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -200,14 +200,14 @@
                   "id": "2689e38f-7786-4d01-b70b-6f7e66e8aa0d",
                   "title": "New STRIDE threat",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Denial of service",
                   "description": "An attacker may render the user interface unavailable. This may leave users without access to their financial information.",
                   "mitigation": "Cloudflare\nRedundant services\nWAF",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
-                  "score": "6"
+                  "score": "7"
                 },
                 {
                   "id": "e63da8bf-25cd-4f28-9e86-d3c489749064",
@@ -227,8 +227,8 @@
                 "spoofing": 5,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 4,
+                "informationDisclosure": 3,
+                "denialOfService": 5,
                 "elevationOfPrivilege": 0
               }
             }
@@ -792,6 +792,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
