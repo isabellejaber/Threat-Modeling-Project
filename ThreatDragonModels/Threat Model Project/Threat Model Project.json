@@ -594,84 +594,6 @@
               "protocol": "",
               "threats": []
             },
-            "id": "83e4134c-b6d3-493c-acb0-9f39f0043ae8",
-            "source": {
-              "cell": "926769ed-fa5e-4358-8cd2-b59dfac19649"
-            },
-            "target": {
-              "cell": "e35228af-3a69-416b-9626-db29b1f4c2e5"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "ae1abc75-e2d7-4633-a3db-16e22335f9c3",
-            "source": {
-              "cell": "ba6679b0-53ed-44ae-9094-e31e3f7f3466"
-            },
-            "target": {
-              "cell": "e35228af-3a69-416b-9626-db29b1f4c2e5"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
             "id": "3c2d505a-2598-415e-ab61-2bb92e233e0f",
             "source": {
               "cell": "e35228af-3a69-416b-9626-db29b1f4c2e5"
@@ -717,6 +639,84 @@
             },
             "target": {
               "cell": "c7e1c1b3-da72-479d-89ee-93bf7aaa9d9b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "e7266d5f-c05e-4169-8521-76b01d39aab2",
+            "source": {
+              "cell": "926769ed-fa5e-4358-8cd2-b59dfac19649"
+            },
+            "target": {
+              "cell": "e35228af-3a69-416b-9626-db29b1f4c2e5"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "62c37a56-8d26-466a-9d55-462715cf8952",
+            "source": {
+              "cell": "ba6679b0-53ed-44ae-9094-e31e3f7f3466"
+            },
+            "target": {
+              "cell": "e35228af-3a69-416b-9626-db29b1f4c2e5"
             }
           },
           {
